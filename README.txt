@@ -1,4 +1,4 @@
----------------- task 1: Analysing the Computer Science Papers Dataset -----------------
+# Task 1: Analysing the Computer Science Papers Dataset 
 
 The dblp file is scraped using the python script file extract_data.py.
 This can be run by executing the command 'python extract_data.py' in the terminal.
@@ -14,11 +14,11 @@ Stop the running neo4j container and start a new one, setting the new graph data
 	docker run -v /c/Users/jasmi/Desktop/year4/DataScience/Assignment/task1/neo4j/logs:/logs --env=NEO4J_dbms_active__database=graph_db.db -v /c/Users/jasmi/Desktop/year4/DataScience/Assignment/Question1/neo4j/data:/data --name some-neo4j --env NEO4J_AUTH=none -p 7474:7474 -p 7687:7687 -d neo4j
 Link the running container to analyse data on Jupyter lab. 	
 
---------------- task 2: Extracting and Visualising Data from EU Stats ---------------
+# Task 2: Extracting and Visualising Data from EU Stats
 
 Run Data_Extraction_And_Visualization.ipynb in Jupyter Lab to analyse the data.
 
---------------- task: Dataset Analysis -----------------
+# Task 3: Dataset Analysis
 
 Scrape the html files by running the python script extract_data.py by the command 'python extract_data.py'.
 A new file 'full_property_data.csv' will be created.
