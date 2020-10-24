@@ -6,14 +6,16 @@ This is a python script file to scrape the dblp file.
 
 ### To run:
 
-Execute the command 'python extract_data.py' in the terminal.
-
+Execute the command
+```
+python extract_data.py'
+```
 Three new files, 'Author.csv', 'Article.csv', and 'Publish.csv' will be created. 
 
 Duplicates must be removed by running the following commands:
-	awk '!seen[$0]++' Author.csv >> Author.csv
-	awk '!seen[$0]++' Article.csv >> Article.csv
-	awk '!seen[$0]++' Publish.csv >> Publish.csv
+	``` awk '!seen[$0]++' Author.csv >> Author.csv ```
+	``` awk '!seen[$0]++' Article.csv >> Article.csv ```
+	``` awk '!seen[$0]++' Publish.csv >> Publish.csv ```
 
 ### Importing data into neo4j: 
 
